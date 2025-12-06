@@ -46,3 +46,22 @@ window.addEventListener("scroll", () => {
     goTopBtn.classList.remove("active");
   }
 });
+
+const cards = document.querySelectorAll(".popular-card");
+const popups = document.querySelectorAll(".pop");
+const closeBtns = document.querySelectorAll(".close");
+
+cards.forEach((card, i) => {
+  card.addEventListener("click", () => popups[i].style.display = "flex");
+});
+
+closeBtns.forEach((btn, i) => {
+  btn.addEventListener("click", () => popups[i].style.display = "none");
+});
+
+// Close when clicking outside popup content
+popups.forEach(popup => {
+  popup.addEventListener("click", e => {
+    if (e.target === popup) popup.style.display = "none";
+  });
+});
