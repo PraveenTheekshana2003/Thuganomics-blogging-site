@@ -267,14 +267,16 @@ body {
 }
 
 .header-top .logo {
+  margin-top: 20px;
   margin-inline: auto;
-  font-size: 2rem;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 50px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 200;
+  font-family: 'UnifrakturCook', 'Old English Text MT', 'Gothic', serif;
   position: absolute;
-  left: 620px;
-  padding: 30px;
+  left: 550px;
+  padding: 20px;
+  letter-spacing: 1px;
 }
 
 .header-top .logo img {
@@ -434,15 +436,35 @@ body {
   text-align: center;
   padding-top: 125px;
 }
+.hero2 {
+  background-image: url("https://i.pinimg.com/1200x/18/63/73/186373e6179ee98845946fe5db6312f7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+  min-height: 900px;
+  text-align: center;
+  padding-top: 125px;
+}
+
+.h4welcome {
+  color:white;
+  font-size: 20px;
+}
 
 .hero-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-text {
   color: var(--white);
   font-size: var(--fs-5);
   margin-bottom: 40px;
+  width: 780px;
+  margin-top: 20px
 }
 
 .btn-group {
@@ -764,8 +786,66 @@ body {
 
 .cta {
   background: hsl(74.77deg 57% 51%);
-
+  
+}
+.cta2{
+   display: flex;
   padding-block: var(--section-padding);
+}
+.contactus{
+  font-size: 70px;
+  text-align: center;
+  margin-top: 0;
+  word-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.whatsapp
+{
+background-color: rgba(115, 158, 35, 0.47);
+  border-radius: 10px;
+  width:20%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  margin-left: 9%;
+  margin-right: 5%;
+  font-weight: bold;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px #474343;
+
+
+}
+.Face_Book{
+ background-color: rgba(115, 158, 35, 0.47);
+  border-radius: 10px;
+  width:20%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px #474343;
+}
+.email{
+  background-color: rgba(115, 158, 35, 0.47);
+  border-radius: 10px;
+  width:20%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px #474343;
 }
 
 .cta :is(.section-subtitle, .section-title, .section-text) {
@@ -792,6 +872,7 @@ body {
 
 .footer-brand {
   margin-bottom: 30px;
+  display: block;
 }
 
 .footer-brand img {
@@ -803,12 +884,36 @@ body {
 }
 
 .footer-text {
-  font-size: var(--fs-5);
-  line-height: 1.7;
+   position: relative;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-500);
+  margin-bottom: 30px;
+}
+.footer-text::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: hsl(74.77deg 57% 51%);
+
 }
 
 .footer-contact {
   margin-bottom: 30px;
+}
+.footer-link{
+  display:block;
+  color: white;
+  gap: 10px;
+}
+.footer-link:hover{
+  color: yellowgreen;
+}
+.list1{
+  display: block;
+  gap: 10px;
 }
 
 .contact-title {
@@ -1523,51 +1628,31 @@ address {
 
 }
 
+/* About us page*/
 
-/* POPUP GLOBAL STYLES */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999;
+.h4welcome{
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
 }
+.h1_hero-title{
+  color: white;
+  text-shadow: 2px 2px 5px rgb(228, 16, 16);
+  margin-top: 0px;
+  margin-bottom: 50px;
 
-.popup-box {
-  background: #fff;
-  width: 90%;
-  max-width: 700px;
-  padding: 25px;
-  border-radius: 20px;
-  max-height: 85vh;
-  overflow-y: auto;
-  position: relative;
-  animation: popupAnim 0.3s ease-out;
 }
-
-@keyframes popupAnim {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+.hero-text2{
+  font-size: 17px;
+  padding: 7px;
+  color: white;
+ width: 757px;
+ margin-top: 5px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ /*font-weight: bold;*/
 }
-
-.popup-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 35px;
-  color: black;
-  cursor: pointer;
+  .container2{
+ 
+  margin-top: 0px;
+  margin-bottom: 100px;
 }
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
